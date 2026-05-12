@@ -89,6 +89,8 @@ static const double dcs2 = 1.0 / cs2;   // 声速平方的倒数
 // 这是POD方法的关键: 速度是无理数, 不落在整数格点上
 static const double EC = std::sqrt(3.0);
 
+static const double M_PI = 4.E0 * atan(1.E0);
+
 // 27个离散速度方向 ef[i] (浮点坐标)
 // 顺序: 静止(1), 面(6), 棱(12), 角(8)
 static const Vec3 ef[QN] = {
